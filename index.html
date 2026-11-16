@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>SDK-Systems - automatyka, maszyny specjalne i części metalowe, Kraków</title>
+<meta name="description" content="SDK-Systems z Krakowa: projektujemy, budujemy i uruchamiamy maszyny specjalne, linie produkcyjne i systemy sterowania PLC. Części metalowe według rysunku. Tel. 882 731 545.">
+<meta name="theme-color" content="#1A1060">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-500.webp" imagesrcset="img/hero-m-420.webp 420w, img/hero-m-500.webp 500w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1440.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/archivo-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/archivo-pl.woff2" crossorigin>
+<style>
+@font-face{font-family:Archivo;src:url(fonts/archivo-rdzen.woff2) format("woff2");font-weight:400 800;font-stretch:100% 118%;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+203A,U+20AC}
+@font-face{font-family:Archivo;src:url(fonts/archivo-pl.woff2) format("woff2");font-weight:400 800;font-stretch:100% 118%;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Archivo fb";src:local("Arial");size-adjust:104%;ascent-override:90%}
+:root{--red:#E81820;--red2:#C8121A;--navy:#301880;--deep:#1A1060;--ink:#15132B;--mut:#53566A;--g:#F1F3F7;--line:#DCDFE7;--hh:68px;--w:min(92vw,1720px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Archivo,"Archivo fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.3vw + 14.8px,19px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:700;font-stretch:112%;line-height:1.06;letter-spacing:-.012em;color:var(--navy)}
+h1{font-size:clamp(32px,3.6vw + 8px,78px);text-wrap:balance;color:#fff}
+h2{font-size:clamp(29px,2.4vw + 10px,60px);text-wrap:balance}
+h3{font-size:clamp(20px,.6vw + 15px,27px);line-height:1.15}
+p{margin:0}
+.wrap{width:var(--w);margin-inline:auto}
+.sec{padding:clamp(64px,7vw,136px) 0}
+.g{background:var(--g)}
+.lead{font-size:clamp(17px,.45vw + 15px,22px);color:var(--mut);max-width:62ch}
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:54px;padding:0 26px;border:0;border-radius:4px;background:var(--red2);color:#fff;font:inherit;font-weight:700;font-stretch:108%;font-size:17px;text-decoration:none;cursor:pointer;transition:background .2s}
+.btn:hover{background:#A80E15}
+.btn svg,.gt{width:12px;height:18px;flex:none}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #FFB3B6;outline-offset:3px}
+/* naglowek */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.logo{display:block;flex:none}
+.logo img{height:48px;width:auto}
+.menu{display:flex;gap:clamp(18px,2vw,40px);margin-left:auto;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--red2)}
+.menu a.on{color:var(--navy);border-color:var(--red)}
+.top .tel{font-weight:700;text-decoration:none;color:var(--navy);white-space:nowrap}
+.top .btn{min-height:44px;padding:0 18px;font-size:15px}
+.burger{display:none}
+/* hero */
+.hero{position:relative;margin-top:var(--hh);min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;background:var(--deep);overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(26,16,96,.92) 0,rgba(26,16,96,.78) 34%,rgba(26,16,96,.25) 62%,rgba(26,16,96,0) 80%),linear-gradient(0deg,rgba(14,9,56,.6) 0,rgba(14,9,56,0) 40%)}
+.hero .wrap{position:relative;z-index:2;padding:clamp(40px,7vh,96px) 0}
+.hero .txt{max-width:min(1080px,58vw)}
+.hero p.l{margin-top:22px;font-size:clamp(17px,.5vw + 15px,22px);line-height:1.5;color:#E6E4F5;max-width:46ch}
+.hero .cta{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 26px}
+.hero .inf{font-size:16px;color:#D5D2EC}
+.hero .inf a{color:#fff;font-weight:700;text-decoration:none}
+/* proces z babelkami */
+.proc-h{display:grid;gap:22px;max-width:980px}
+.hd{display:grid;grid-template-columns:1fr 1fr;gap:22px clamp(32px,5vw,110px);align-items:end}
+.hd .lead{max-width:56ch}
+.steps{margin-top:clamp(40px,5vw,80px);display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:start;gap:0 clamp(16px,2.4vw,48px)}
+.step .b{height:84px;display:flex;align-items:center}
+.step .b svg{display:block}
+.step h3{margin-top:22px}
+.step p{margin-top:12px;color:var(--mut);max-width:40ch}
+.gt-big{width:26px;height:40px;margin-top:22px;color:var(--navy)}
+/* oferta */
+.of{margin-top:clamp(36px,4vw,64px);display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,1.6vw,32px)}
+.of article{background:#fff;display:flex;flex-direction:column}
+.of .ph{aspect-ratio:4/3;overflow:hidden;background:#d9dce4}
+.of .ph img{width:100%;height:100%;object-fit:cover}
+.of .tx{padding:24px clamp(20px,1.6vw,30px) 30px}
+.of ul{margin:14px 0 0;padding:0;list-style:none;color:var(--mut);font-size:.95em}
+.of li{position:relative;padding-left:20px;margin-top:6px}
+.of li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border:2px solid var(--red);border-radius:50%}
+/* maszyny - tor */
+.hrow{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.nav{display:flex;gap:10px}
+.nav button{width:52px;height:52px;border:1.5px solid var(--navy);border-radius:50%;background:#fff;color:var(--navy);cursor:pointer;display:grid;place-items:center}
+.nav button:hover{background:var(--navy);color:#fff}
+.nav button svg{width:12px;height:18px}
+.nav button[data-k="-1"] svg{transform:scaleX(-1)}
+.tor{margin-top:clamp(28px,3vw,48px);display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2*var(--gp))/2.6);--gp:clamp(14px,1.4vw,26px);column-gap:var(--gp);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;padding-bottom:4px}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{scroll-snap-type:none;cursor:grabbing}
+.tor figure{margin:0;scroll-snap-align:start}
+.tor button{all:unset;display:block;width:100%;cursor:zoom-in;aspect-ratio:4/5;overflow:hidden;background:#d9dce4}
+.tor button img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tor button:hover img{transform:scale(1.03)}
+.tor button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.tor figcaption{margin-top:14px;font-weight:600;font-size:.95em;line-height:1.35}
+.tor figcaption span{display:block;margin-top:4px;font-weight:400;color:var(--mut)}
+/* projekty - ciemna */
+.dk{background:var(--deep);color:#E3E1F3}
+.dk h2{color:#fff}
+.dk .lead{color:#C9C5E6}
+.pj{margin-top:clamp(36px,4vw,64px);display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,3vw,64px)}
+.pj div{padding:24px 0;border-top:1px solid rgba(255,255,255,.18)}
+.pj h3{color:#fff;font-size:clamp(18px,.5vw + 14px,23px)}
+.pj h3 small{display:block;margin-top:4px;font-size:15px;font-weight:400;font-stretch:100%;color:#B4AFDA;letter-spacing:0}
+.pj ul{margin:12px 0 0;padding:0;list-style:none}
+.pj li{display:grid;grid-template-columns:56px 1fr;gap:10px;margin-top:6px;font-size:.95em}
+.pj li b{color:#FF8A8F;font-weight:600}
+/* firma */
+.fm{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,5vw,110px);align-items:center}
+.fm .ph{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1vw,18px)}
+.fm .ph img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+.fm .ph img:first-child{grid-column:1/-1;aspect-ratio:16/8}
+.fm p+p{margin-top:16px}
+.fm .tx p{color:var(--mut)}
+/* kontakt */
+.kt{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,4vw,90px);align-items:start}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+label{display:grid;gap:6px;font-size:15px;font-weight:600;color:var(--navy)}
+label.w{grid-column:1/-1}
+input,textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid #C9CDD8;border-radius:4px;padding:13px 14px;width:100%}
+textarea{min-height:140px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(48,24,128,.15)}
+form .btn{justify-self:start}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:var(--red)}
+.msg{grid-column:1/-1;padding:16px 18px;background:#fff;border-left:4px solid var(--navy);color:var(--ink)}
+.msg[hidden]{display:none}
+.note{grid-column:1/-1;font-size:14px;color:var(--mut)}
+.dane{display:grid;gap:22px;margin-top:32px}
+.dane h3{font-size:18px}
+.dane p,.dane a{color:var(--mut);text-decoration:none}
+.dane a:hover{color:var(--red2)}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:#DDE1EA}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+/* stopka */
+footer{background:#fff;border-top:1px solid var(--line);padding:48px 0 28px;font-size:15px;color:var(--mut)}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+footer h4{margin:0 0 10px;font-size:15px;color:var(--navy)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--red2)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.fb{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;align-items:center}
+.fb .cp{font-size:.875em}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(12,8,40,.94);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:min(92vw,1100px);max-height:80vh;width:auto;height:auto}
+.lb p{position:absolute;left:0;right:0;bottom:22px;text-align:center;color:#fff;font-size:16px;padding:0 70px}
+.lb button{position:absolute;width:52px;height:52px;border:1.5px solid rgba(255,255,255,.6);border-radius:50%;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center}
+.lb .x{top:16px;right:16px;font-size:28px;line-height:1}
+.lb .pv{left:16px;top:50%;transform:translateY(-50%)}
+.lb .nx{right:16px;top:50%;transform:translateY(-50%)}
+.lb .pv svg{transform:scaleX(-1)}
+.lb button svg{width:12px;height:18px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media (min-width:1800px){:root{--hh:80px}.logo img{height:58px}.menu a{font-size:18px}.top .tel{font-size:19px}.top .btn{min-height:50px;font-size:17px}.tor{grid-auto-columns:calc((100% - 5*var(--gp))/6)}.pj{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:1799px) and (min-width:1180px){.tor{grid-auto-columns:calc((100% - 3*var(--gp))/4)}}
+@media (max-width:1179px) and (min-width:761px){.tor{grid-auto-columns:calc((100% - 2*var(--gp))/3)}.of{grid-template-columns:1fr 1fr}.pj{grid-template-columns:1fr 1fr}}
+@media (max-width:1100px){.menu,.top .tel{display:none}
+.burger{display:grid;place-items:center;margin-left:auto;width:48px;height:48px;border:1.5px solid var(--line);border-radius:4px;background:#fff;cursor:pointer}
+.burger i,.burger i::before,.burger i::after{display:block;width:22px;height:2px;background:var(--navy);position:relative;content:"";transition:transform .2s}
+.burger i::before{position:absolute;top:-7px}.burger i::after{position:absolute;top:7px}
+.top.open .burger i{background:transparent}.top.open .burger i::before{transform:translateY(7px) rotate(45deg)}.top.open .burger i::after{transform:translateY(-7px) rotate(-45deg)}
+.top.open .menu{display:flex;position:fixed;top:var(--hh);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:8px 4vw 24px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(20,16,60,.12)}
+.top.open .menu a{font-size:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.top.open .menu a.on{border-bottom-color:var(--red)}
+.top .btn{display:none}}
+@media (max-width:760px){:root{--hh:62px}
+.logo img{height:42px}
+.hero{min-height:calc(100svh - var(--hh))}
+.hero picture img{object-position:50% 50%}
+.hero::before{background:linear-gradient(0deg,rgba(20,12,80,.96) 0,rgba(20,12,80,.88) 42%,rgba(20,12,80,.35) 72%,rgba(20,12,80,.1) 100%)}
+.hero .wrap{padding:28px 0 30px}
+.hero .txt{max-width:none}
+.hero p.l{margin-top:16px;font-size:16.5px}
+.hero .cta{margin-top:24px;gap:14px}
+.hero .btn{width:100%;justify-content:center}
+.hero .inf{font-size:15px}
+.steps{grid-template-columns:1fr;gap:8px}
+.hd{grid-template-columns:1fr}
+.gt-big{transform:rotate(90deg);margin:10px 0 0 28px;width:18px;height:28px}
+.step .b{height:auto;min-height:40px}
+.of{grid-template-columns:1fr}
+.tor{grid-auto-columns:76%}
+.pj{grid-template-columns:1fr}
+.fm,.kt{grid-template-columns:1fr}
+form{grid-template-columns:1fr}
+.fg{grid-template-columns:1fr 1fr}
+.fg>div:first-child{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="gt" viewBox="0 0 12 18"><path d="M2 2l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol></defs></svg>
+<header class="top" id="top">
+<div class="wrap">
+<a class="logo" href="#" aria-label="SDK-Systems - strona główna"><img src="img/logo.webp" width="280" height="131" alt="SDK-Systems good &gt; better &gt; best"></a>
+<nav class="menu" id="menu" aria-label="Menu">
+<a href="#proces">Jak pracujemy</a>
+<a href="#oferta">Oferta</a>
+<a href="#maszyny">Maszyny</a>
+<a href="#projekty">Projekty</a>
+<a href="#firma">Firma</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+<a class="tel" href="tel:+48882731545">882 731 545</a>
+<a class="btn" href="#kontakt">Zapytanie<svg aria-hidden="true"><use href="#gt"/></svg></a>
+<button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<picture>
+<source media="(max-width:760px)" srcset="img/hero-m-420.webp 420w, img/hero-m-500.webp 500w" sizes="100vw">
+<img src="img/hero-1440.webp" srcset="img/hero-1024.webp 1024w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" sizes="100vw" width="1920" height="758" alt="Linia do produkcji inlet zbudowana przez SDK-Systems: pneumatyka, siłowniki i stanowisko kontroli wizyjnej" fetchpriority="high">
+</picture>
+<div class="wrap">
+<div class="txt">
+<h1>Maszyny i automatyka produkcji - od pomysłu do wdrożenia</h1>
+<p class="l">Projektujemy, budujemy i uruchamiamy maszyny specjalne, linie produkcyjne i sterowanie PLC pod Państwa proces. Części metalowe wykonujemy według rysunku lub próbki.</p>
+<div class="cta">
+<a class="btn" href="#kontakt">Opisz problem techniczny<svg aria-hidden="true"><use href="#gt"/></svg></a>
+<p class="inf">Kraków, Aleja Pokoju 62/8 - tel. <a href="tel:+48882731545">882 731 545</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="proces">
+<div class="wrap">
+<div class="hd">
+<h2>Od problemu technicznego do działającej linii</h2>
+<p class="lead">Całość prowadzimy sami: mechanikę, elektrykę, program sterowania i uruchomienie. Dzięki temu każdy etap jest w jednych rękach, a maszyna powstaje dokładnie pod Państwa wymagania.</p>
+</div>
+<div class="steps">
+<div class="step">
+<div class="b"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="12" fill="none" stroke="#E81820" stroke-width="4"/></svg></div>
+<h3>Problem techniczny</h3>
+<p>Opisują Państwo, co ma robić maszyna albo który etap produkcji wymaga automatyzacji. Wystarczy rysunek, szkic lub próbka.</p>
+</div>
+<svg class="gt-big" viewBox="0 0 12 18" aria-hidden="true"><use href="#gt"/></svg>
+<div class="step">
+<div class="b"><svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="21.5" fill="none" stroke="#E81820" stroke-width="5"/></svg></div>
+<h3>Projekt, produkcja, testy</h3>
+<p>Inżynierowie projektują urządzenie, przygotowują schematy i program sterowania, budują maszynę i sprawdzają ją przed odbiorem.</p>
+</div>
+<svg class="gt-big" viewBox="0 0 12 18" aria-hidden="true"><use href="#gt"/></svg>
+<div class="step">
+<div class="b"><svg width="80" height="80" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="33" fill="none" stroke="#E81820" stroke-width="7"/></svg></div>
+<h3>Instalacja, szkolenie, wsparcie</h3>
+<p>Uruchamiamy urządzenie u klienta, szkolimy operatorów i zapewniamy zdalny dostęp do maszyny, gdy trzeba coś sprawdzić lub zmienić.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec g" id="oferta">
+<div class="wrap">
+<h2>Czym się zajmujemy</h2>
+<div class="of">
+<article>
+<div class="ph"><img src="img/linia-inlet-400.webp" srcset="img/linia-inlet-400.webp 400w, img/linia-inlet-800.webp 567w" sizes="(max-width:760px) 92vw, (max-width:1179px) 46vw, 23vw" width="567" height="425" loading="lazy" alt="Węzeł nawijania anten kart zbliżeniowych z serwonapędami i pneumatyką"></div>
+<div class="tx"><h3>Maszyny specjalne i linie produkcyjne</h3>
+<ul><li>urządzenia do konkretnego procesu technologicznego</li><li>sterowniki PLC, siłowniki pneumatyczne, serwonapędy</li><li>pełna automatyzacja bez błędów ręcznej obsługi</li></ul></div>
+</article>
+<article>
+<div class="ph"><img src="img/uruchomienie-400.webp" srcset="img/uruchomienie-400.webp 400w, img/uruchomienie-800.webp 800w" sizes="(max-width:760px) 92vw, (max-width:1179px) 46vw, 23vw" width="800" height="355" loading="lazy" alt="Szkolenie przy stanowisku z panelem sterowania"></div>
+<div class="tx"><h3>Automatyka i oprogramowanie</h3>
+<ul><li>projekty systemów automatyki i schematy elektryczne</li><li>programowanie PLC, falowniki i serwonapędy</li><li>panele operatorskie HMI i zdalny dostęp do maszyn</li><li>rozwiązania w duchu Przemysłu 4.0</li></ul></div>
+</article>
+<article>
+<div class="ph"><img src="img/tm4314-400.webp" srcset="img/tm4314-400.webp 400w, img/tm4314-800.webp 566w" sizes="(max-width:760px) 92vw, (max-width:1179px) 46vw, 23vw" width="566" height="425" loading="lazy" alt="Tokarka do drewna zmodernizowana zestawem CNC Motiv TM4314"></div>
+<div class="tx"><h3>Modernizacja maszyn i CNC</h3>
+<ul><li>uruchomienia urządzeń i całych linii</li><li>modernizacja starszych maszyn</li><li>własne frezarki i zestawy CNC do drewna</li></ul></div>
+</article>
+<article>
+<div class="ph"><img src="img/czesci-400.webp" srcset="img/czesci-400.webp 400w, img/czesci-800.webp 800w" sizes="(max-width:760px) 92vw, (max-width:1179px) 46vw, 23vw" width="800" height="600" loading="lazy" alt="Metalowe elementy oprzyrządowania wykonane według rysunku"></div>
+<div class="tx"><h3>Części metalowe</h3>
+<ul><li>według rysunków, szkiców lub próbek</li><li>frezowanie, toczenie, spawanie</li><li>powłoki galwaniczne i malowanie proszkowe</li></ul></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="sec" id="maszyny">
+<div class="wrap">
+<div class="hrow">
+<div class="proc-h"><h2>Maszyny, które zbudowaliśmy</h2>
+<p class="lead">Wybrane urządzenia z naszej pracowni - od linii do kart zbliżeniowych po frezarki CNC do drewna.</p></div>
+<div class="nav" data-nav="tor1"><button type="button" data-k="-1" aria-label="Poprzednie"><svg aria-hidden="true"><use href="#gt"/></svg></button><button type="button" data-k="1" aria-label="Następne"><svg aria-hidden="true"><use href="#gt"/></svg></button></div>
+</div>
+<div class="tor" id="tor1" data-tor>
+<figure><button type="button" data-full="img/ch1715-800.webp"><img src="img/ch1715-400.webp" width="400" height="225" loading="lazy" alt="Frezarka CNC 4 osi Oktava CH1715"></button><figcaption>Frezarka CNC 4 osi z układem sprzężenia zwrotnego "Oktava CH1715"<span>2015</span></figcaption></figure>
+<figure><button type="button" data-full="img/tm4314-800.webp"><img src="img/tm4314-400.webp" width="400" height="300" loading="lazy" alt="Tokarka do drewna TD-200 z zestawem CNC Motiv TM4314"></button><figcaption>Tokarka do drewna TD-200 z zestawem CNC "Motiv TM4314"<span>2015</span></figcaption></figure>
+<figure><button type="button" data-full="img/ch3714-800.webp"><img src="img/ch3714-400.webp" width="400" height="364" loading="lazy" alt="Frezarka 3D CNC do drewna Harmonia CH3714"></button><figcaption>Frezarka 3D CNC do drewna "Harmonia CH3714"<span>2014</span></figcaption></figure>
+<figure><button type="button" data-full="img/personalizacja-800.webp"><img src="img/personalizacja-400.webp" width="400" height="305" loading="lazy" alt="Maszyna do ścinki i personalizacji kart zbliżeniowych"></button><figcaption>Maszyna do ścinki i personalizacji kart zbliżeniowych<span>2004</span></figcaption></figure>
+<figure><button type="button" data-full="img/linia-inlet-800.webp"><img src="img/linia-inlet-400.webp" width="400" height="300" loading="lazy" alt="Węzeł nawijania anten dla kart zbliżeniowych"></button><figcaption>Węzeł nawijania anten dla kart zbliżeniowych<span>linia kart zbliżeniowych</span></figcaption></figure>
+<figure><button type="button" data-full="img/karty-pers-800.webp"><img src="img/karty-pers-400.webp" width="400" height="300" loading="lazy" alt="Linia do produkcji inlet"></button><figcaption>Linia do produkcji inlet<span>2003</span></figcaption></figure>
+<figure><button type="button" data-full="img/inlety-800.webp"><img src="img/inlety-400.webp" width="400" height="300" loading="lazy" alt="Pojemnik z inletami"></button><figcaption>Pojemnik z inletami<span>linia kart zbliżeniowych</span></figcaption></figure>
+<figure><button type="button" data-full="img/montaz-kart-800.webp"><img src="img/montaz-kart-400.webp" width="319" height="425" loading="lazy" alt="Maszyna do montażu kart chipowych do automatu telefonicznego"></button><figcaption>Maszyna do montażu kart chipowych do automatu telefonicznego<span>2001</span></figcaption></figure>
+<figure><button type="button" data-full="img/nawijanie-800.webp"><img src="img/nawijanie-400.webp" width="319" height="425" loading="lazy" alt="Maszyna do personalizacji kart plastikowych"></button><figcaption>Maszyna do personalizacji kart plastikowych<span>2000</span></figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="sec dk" id="projekty">
+<div class="wrap">
+<div class="hd"><h2>Dla kogo pracowaliśmy</h2>
+<p class="lead">Fabryki, drukarnie, przewoźnicy, instytucje i gospodarstwa - każdy projekt zaczynał się od innego problemu technicznego.</p></div>
+<div class="pj">
+<div><h3>Telekart-Prylad<small>fabryka, Odessa</small></h3><ul><li><b>2001</b>maszyny do montażu i personalizacji kart do telefonów publicznych</li><li><b>2003</b>warsztaty do produkcji kart zbliżeniowych Mifare</li><li><b>2005</b>automat do montażu elementów osiowych na płytkach PCB</li><li><b>2012</b>automatyczny kompleks parkingowy "Smart-Park"</li></ul></div>
+<div><h3>Fabryka mebli Harmonia<small>Odessa</small></h3><ul><li><b>2014</b>3-osiowa frezarka do drewna</li><li><b>2015</b>tokarka CNC i 4-osiowa frezarka do drewna</li><li><b>2016</b>modernizacja frezarki i tokarki CNC</li></ul></div>
+<div><h3>Państwowy Instytut Specjalnej Ochrony Informacji i Komunikacji<small>Kijów</small></h3><ul><li><b>2008</b>automatyczna linia pakująca do celów specjalnych</li></ul></div>
+<div><h3>Metro w Charkowie<small>przedsiębiorstwo miejskie</small></h3><ul><li><b>2009</b>automatyczny terminal sprzedaży kart zbliżeniowych</li></ul></div>
+<div><h3>Drukarnia Fast Screen<small>Odessa</small></h3><ul><li><b>2013</b>przebudowa prasy drukarskiej na maszynę do tłoczenia folią</li></ul></div>
+<div><h3>Prywatna firma przewozowa<small>Odessa</small></h3><ul><li><b>2014</b>system liczenia pasażerów w autobusach</li></ul></div>
+<div><h3>Farma FlexerSale<small>Odessa</small></h3><ul><li><b>2015</b>automatyzacja karmienia przepiórek</li></ul></div>
+<div><h3>Fabryka wyrobów kutych Pysanka<small>Gródek, obwód lwowski</small></h3><ul><li><b>2016</b>automat do gięcia taśm metalowych</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="firma">
+<div class="wrap fm">
+<div class="tx">
+<h2>Zespół inżynierów, który zamienia pomysł w maszynę</h2>
+<p class="lead" style="margin-top:22px">Działamy w obszarze automatyzacji procesów produkcyjnych jako niezależne przedsiębiorstwo. Od projektu po uruchomienie kontrolujemy całe rozwiązanie.</p>
+<p style="margin-top:20px">Firmie produkcyjnej zaprojektujemy automatyczną linię, która wyeliminuje błędy ręcznej obsługi i utrzyma stałą jakość wyrobu. Komuś, kto ma własny produkt lub know-how, pomożemy przejść od specyfikacji do prototypu i do sprzętu, na którym da się go produkować.</p>
+<p>Maszyny mają być szybkie, precyzyjne, proste w obsłudze i niezawodne - tak jak w naszym haśle: good &gt; better &gt; best.</p>
+</div>
+<div class="ph">
+<img src="img/montaz-800.webp" srcset="img/montaz-400.webp 400w, img/montaz-800.webp 800w" sizes="(max-width:760px) 92vw, 46vw" width="800" height="355" loading="lazy" alt="Inżynier przy montażu dużego wymiennika w hali">
+<img src="img/elektronika-400.webp" srcset="img/elektronika-400.webp 400w, img/elektronika-800.webp 490w" sizes="(max-width:760px) 46vw, 23vw" width="490" height="314" loading="lazy" alt="Montaż elektroniki sterującej na płytce drukowanej">
+<img src="img/inlety-400.webp" srcset="img/inlety-400.webp 400w, img/inlety-800.webp 566w" sizes="(max-width:760px) 46vw, 23vw" width="566" height="425" loading="lazy" alt="Gotowe inlety kart zbliżeniowych w pojemniku maszyny">
+</div>
+</div>
+</section>
+
+<section class="sec g" id="kontakt">
+<div class="wrap kt">
+<div>
+<h2>Opisz problem techniczny</h2>
+<p class="lead" style="margin-top:18px">Napisz, co ma robić maszyna albo jaką część trzeba wykonać. Odpowiemy z propozycją rozwiązania i kolejnymi krokami.</p>
+<form id="form" novalidate>
+<label>Imię i nazwisko<input name="n" autocomplete="name" required></label>
+<label>Firma<input name="f" autocomplete="organization"></label>
+<label>E-mail<input name="e" type="email" autocomplete="email" required></label>
+<label>Telefon<input name="t" type="tel" autocomplete="tel"></label>
+<label class="w">Opis problemu lub części<textarea name="m" required></textarea></label>
+<button class="btn" type="submit">Wyślij zapytanie<svg aria-hidden="true"><use href="#gt"/></svg></button>
+<p class="msg" id="msg" hidden role="status">Dziękujemy! Na podany e-mail wysłaliśmy potwierdzenie - jeśli go nie widać, zajrzyj do folderu Spam.</p>
+<p class="note">Podgląd: formularz pokazowy, wiadomość nie jest wysyłana.</p>
+</form>
+</div>
+<div>
+<div class="dane">
+<div><h3>SDK-Systems Sp. z o.o.</h3><p>Aleja Pokoju 62/8<br>31-564 Kraków</p></div>
+<div><h3>Biuro i sprzedaż</h3><p><a href="tel:+48882731545">tel. +48 882 731 545</a><br><a href="mailto:info@sdk-systems.com.pl">info@sdk-systems.com.pl</a></p></div>
+</div>
+<div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Aleja+Pokoju+62,+31-564+Krak%C3%B3w&amp;output=embed" data-title="Mapa: SDK-Systems, Aleja Pokoju 62/8, Kraków"></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+<div><img src="img/logo.webp" width="280" height="131" alt="SDK-Systems" loading="lazy" style="height:52px;width:auto"><p style="margin-top:12px">Automatyka, maszyny specjalne i części metalowe.</p></div>
+<div><h4>Adres</h4><p>Aleja Pokoju 62/8<br>31-564 Kraków</p></div>
+<div><h4>Kontakt</h4><ul><li><a href="tel:+48882731545">+48 882 731 545</a></li><li><a href="mailto:info@sdk-systems.com.pl">info@sdk-systems.com.pl</a></li></ul></div>
+<div><h4>Na stronie</h4><ul><li><a href="#oferta">Oferta</a></li><li><a href="#maszyny">Maszyny</a></li><li><a href="#projekty">Projekty</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+</div>
+<div class="fb"><span class="cp">© <span id="rok">2026</span> SDK-Systems Sp. z o.o.</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=sdk-systems.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+</div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+<button class="x" type="button" aria-label="Zamknij">&times;</button>
+<button class="pv" type="button" aria-label="Poprzednie"><svg aria-hidden="true"><use href="#gt"/></svg></button>
+<img alt="">
+<button class="nx" type="button" aria-label="Następne"><svg aria-hidden="true"><use href="#gt"/></svg></button>
+<p></p>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
